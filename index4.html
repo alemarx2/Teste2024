@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="Menu.css" media="screen" />
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+  border:1px solid black;
+  background-color:#ddd;
+}
+
+.box img{  
+  width: 100%;  
+  aspect-ratio: 1/1;
+  object-fit: cover; 
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.titulo{
+   font-size:1.2em;
+   border-bottom:2px dotted silver;
+}
+
+ .Completo{
+    display:block;
+ }
+ 
+ .Resumido{
+    display:none;
+ }
+
+@media (min-width: 320px) and (max-width: 800px) {
+ .box {
+   float: left;
+   width: 50%;
+   padding: 10px;
+   border:1px solid black;
+   background-color:#ddd;
+ }
+  
+ .Completo{
+    display:none;
+ }
+ 
+ .Resumido{
+    display:block;
+ }
+}
+
+/* Fim do media Querie entre 320px e 800px - portrait tablets, portrait iPad, e-readers */
+
+@media only screen and (max-width: 320px) {
+
+ .box {
+   float: left;
+   width: 100%;
+   padding: 10px;
+   border:1px solid black;
+   background-color:#ddd;
+ }
+ 
+ .Completo{
+    display:none;
+ }
+ 
+ .Resumido{
+    display:none;
+ }
+
+}
+/* Fim do media Querie até 320 px - smartphones, portrait iPhone, portrait */
+
+</style>
+</head>
+<body>
+ <nav>
+    <ul class="menu">
+       <li><a href="#">Home</a></li>
+       <li><a href="#">Álbuns</a>
+          <ul>
+              <li><a href="#">Queen</a></li>
+              <li><a href="#">Iron</a></li>
+              <li><a href="#">Maroon5</a></li>
+              <li><a href="#">Taylor Swift</a></li>
+              <li><a href="#">Ariana Grande</a></li>
+         </ul>
+       </li>
+       <li><a href="#">Shows</a></li>
+       <li><a href="#">Contato</a></li>
+     </ul>
+ </nav>
+ <br>
+ <h2>Álbuns</h2>
+
+ <div class="Completo">
+	<p >
+     A música (do grego μουσική τέχνη - musiké téchne, a arte das musas) é uma forma de arte que se constitui na combinação de vários sons e ritmos, seguindo uma pré-organização ao longo do tempo.
+	</p>	 
+	<p >
+	É considerada por diversos autores como uma prática cultural e humana. Não se conhece nenhuma civilização ou agrupamento que não possua manifestações musicais próprias. 
+	Embora nem sempre seja feita com esse objetivo, a música pode ser considerada como uma forma de arte, considerada por muitos como sua principal função.
+	</p>
+	<a href="https://pt.wikipedia.org/wiki/M%C3%BAsica">Saiba mais</a>	
+</div>
+
+<div class="Resumido">
+	<p >
+     A música (do grego μουσική τέχνη - musiké téchne, a arte das musas)[1] é uma forma de arte que se constitui na combinação de vários sons e ritmos, seguindo uma pré-organização ao longo do tempo.
+	</p>	 	
+	<a href="https://pt.wikipedia.org/wiki/M%C3%BAsica">Saiba mais</a>	
+</div>
+
+<Section class="clearfix">
+  <div class="box" >
+    <p class="titulo">Queen</p>
+    <p>News of the World</p>
+    <img  src="Album1.jpg">
+  </div>
+  <div class="box" >
+    <p class="titulo">Queen</p>
+    <p>Queen II</p>  
+    <img  src="Album2.jpg">
+  </div>
+  
+  <div class="box" >
+    <p class="titulo">Queen</p>
+    <p>A Night At The Opera</p>
+    <img  src="Album6b.jpg">
+  </div>
+  
+  <div class="box" >
+    <p class="titulo">Queen</p>
+    <p>The Works</p>
+    <img  src="Album3.jpg">
+  </div>
+  
+  <div class="box" >
+    <p class="titulo">Queen</p>
+    <p>Hot Space</p>
+    <img  src="Album4.jpg">
+  </div>
+  <div class="box" >
+    <p class="titulo">Queen</p>
+    <p>Queen Live Killers</p>
+    <img  src="Album5.jpg">
+  </div>
+  
+  
+</Section>
+
+<p><strong>Note:</strong> Here, we use the clearfix hack to take care of the layout flow. 
+We also use the box-sizing property to make sure that the box doesn't break due to extra padding. Try to remove this code to see the effect.</p>
+
+</body>
+</html>
+
+

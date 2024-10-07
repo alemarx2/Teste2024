@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">   
+
+   <style>    
+     .carouselExampleCaptions > .carousel-item > img 
+     {      
+      height: 200px;               
+      object-fit: cover;    
+     }
+
+     .accordion{
+       --bs-accordion-color: black;
+       --bs-accordion-btn-bg: #74946D;
+       --bs-accordion-button-focus-border-color:  silver;
+
+       --bs-accordion-active-bg: #566153;
+       --bs-accordion-active-color: white;
+     }
+
+     .accordion-button:not(.colladsed){
+      box-shadow: none;
+     }
+
+
+
+   </style> 
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-body-tertiary">
+      <div class="container-fluid">
+        
+        <a class="navbar-brand" href="Final.html">
+         <img src="Logo.png" alt="Bootstrap" height="30px">
+        </a>
+
+        <button class="navbar-toggler" type="button" 
+        data-bs-toggle="collapse" 
+        data-bs-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" 
+        aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#destaque" >Destaques</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Bandas
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Queen</a></li>
+                <li><a class="dropdown-item" href="#">Iron Maden</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Tylor Swift</a></li>
+                <li><a class="dropdown-item" href="#">Bruno Mars</a></li>
+                <li><a class="dropdown-item" href="#">Harry Styles</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" >Festivais</a>
+            </li>
+          </ul>
+         
+        </div>
+      </div>
+    </nav>
+
+ <div class="card mb-3">  
+  <div class="card-body">
+    <h2 class="card-title"><img src="LogQueen.png"></h2>
+    <img src="LogoQueen3.jpg" class="card-img-top" alt="...">
+    <p class="card-text pt-2">Queen é uma banda de rock liderada atualmente por Brian May (guitarra), Roger Taylor (bateria) e John Deacon (baixo). Foi uma das mais populares bandas inglesas dos anos 1970 e 1980, sendo precursora do rock tal como hoje o conhecemos, com magníficas produções dos seus concertos e videoclipes das suas canções. Mesmo nunca tendo sido levada a sério pelos críticos da sua época, que consideravam a sua música "comercial" (a crítica de hoje considera os Queen como uma das melhores bandas de rock de todos os tempos), a banda tornou-se a das mais famosas entre o público, graças à sua mistura única entre as complexas e elaboradas apresentações ao vivo e o dinamismo e carisma da sua estrela maior, o vocalista Freddie Mercury.</p>    
+  </div>
+
+</div>
+
+
+<section class="container-fluid">
+  <div class="row">
+     <div class="col-6">
+       <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              História
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Em 1968, os amigos de escola Brian May, um guitarrista, e Tim Staffell, baixista e cantor, decidiram formar uma banda e colocaram um anúncio no Imperial College, em Londres, à procura de um baterista ao estilo de Ginger Baker e Mitch Mitchell, e o estudante de odontologia Roger Taylor respondeu, embora seu perfil estivesse mais próximo de Keith Moon. Mesmo assim, o instrumentista impressionou May e Staffell, que o integraram ao conjunto. O trio foi batizado de Smile.
+              <br>
+              Enquanto frequentava a Ealing Art College, Tim tornou-se amigo de Farrokh Bulsara, que tinha como apelido Freddie. Bulsara sentia que seus gostos eram compatíveis com os da Smile e tornou-se um grande fã da banda, apesar de que a sua vontade de tornar-se o vocalista daquele grupo era cada vez mais crescente.Nesta época, o músico saíra de outros grupos. 
+              <br>
+              Em todos os conjuntos dos quais fazia parte, era exigência cantar blues, todavia as influências do vocalista eram bem mais ecléticas.Ainda em 1969, Bulsara foi apresentado por Tim a Roger e Brian. O estilo glam foi considerado peculiar pelos instrumentistas, e embora o considerassem um pouco afeminado por pintar as unhas, sua personalidade imperativa era tida como cativante. Mais tarde, o cantor estava morando próximo aos dois, fato que fez os demais conhecerem-no melhor, principalmente em relação às suas habilidades de canto e piano.
+            </div>
+          </div>
+        </div>
+
+         <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Formação
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Em 1968, os amigos de escola Brian May, um guitarrista, e Tim Staffell, baixista e cantor, decidiram formar uma banda e colocaram um anúncio no Imperial College, em Londres, à procura de um baterista ao estilo de Ginger Baker e Mitch Mitchell, e o estudante de odontologia Roger Taylor respondeu, embora seu perfil estivesse mais próximo de Keith Moon. Mesmo assim, o instrumentista impressionou May e Staffell, que o integraram ao conjunto. O trio foi batizado de Smile.<br>
+              Enquanto frequentava a Ealing Art College, Tim tornou-se amigo de Farrokh Bulsara, que tinha como apelido Freddie. Bulsara sentia que seus gostos eram compatíveis com os da Smile e tornou-se um grande fã da banda, apesar de que a sua vontade de tornar-se o vocalista daquele grupo era cada vez mais crescente. Nesta época, o músico saíra de outros grupos. Em 1969, por exemplo, fundou a Ibex, depois nomeada Wreckage, mas que não durou muito tempo, depois integrando o Sour Milk Sea. Em todos os conjuntos dos quais fazia parte, era exigência cantar blues, todavia as influências do vocalista eram bem mais ecléticas.Ainda em 1969, Bulsara foi apresentado por Tim a Roger e Brian. O estilo glam foi considerado peculiar pelos instrumentistas, e embora o considerassem um pouco afeminado por pintar as unhas, sua personalidade imperativa era tida como cativante. Mais tarde, o cantor estava morando próximo aos dois, fato que fez os demais conhecerem-no melhor, principalmente em relação às suas habilidades de canto e piano.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Musicalidade
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Temas líricos
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+     <div class="col-6">
+       <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/1dfeR4HaWDbWqFHLkxsg1d?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe> 
+     </div>
+  </div>  
+</section>
+
+
+
+   <footer>
+     Aqui vaio o rodapé 
+   </footer>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> 
+  </body>
+</html>
+<!--https://www.youtube.com/watch?v=mm_7-6-GxYQ-->
